@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar justify-content-center bg-primary" style="color: black">
+            <h1>Weather Dashboard</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="row pr-0">
+            <section class="col-3" style="background: rgb(247, 246, 246);">
+                <section class="row">
+                    <form class="form-inline pt-3 pl-4">
+                        <h4>Search for a City:</h4>
+                        <input id="searchCity" class="mt-1 pb-1" name="input" type="search" aria-label="Search">
+                        <button id="srchBtn" class="btn bg-primary mt-1 pt-1 pb-1" type="submit">search<i class="fas fa-search"></i></button>
+                    </form>
+                </section>
+                    <section class="list-group pt-3 pl-2">
+                        <button id="btn1" type="button" class="list-group-item"></button>
+                    </section>
+            </section>
+            <section class="col-9">
+                <section class="row">
+                    <section class="border p-3 m-3 w-100"> 
+                        <img style="width: 60px;" id="srchIcon"/>
+                        <p id="srchCity">City:</p>
+                        <p id="srchTemp">Temperature:</p>
+                        <p id="srchHumid">Humidity:</p>
+                        <p id="srchWind">Wind Speed:</p>
+    
+                        <section class="row pl-3">
+                            <p >UV Index: </p>
+                            <p id="srchUVI" class="card ml-2 pl-2 pr-2 text-light"></p>
+                        </section>
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="row ml-3 w-100">
+                        <h2 class="pl-3">5 Day Forecast:</h2>
+                    </section>
+                    <section class="row ml-3 w-100">
+                        <section class="col">
+                            <section class="row pl-1 w-100">
+                                <section class="col pr-3">
+                                    <section id="day1" class="card">
+                                        <figure class="bg-primary text-light card-body">
+                                            <p id="day1Date"></p>
+                                            <img id="day1Icon"/>
+                                            <p id="day1Temp">Temp:</p>
+                                            <p id="day1Humid">Humidity:</p>
+                                            <p id="day1Wind">Wind Speed:</p>
+                                        </figure>
+                                    </section>
+                                </section>
+                                <section class="col pr-3">
+                                    <section id="day2" class="card">
+                                        <figure class="bg-primary text-light card-body">
+                                            <p id="day2Date"></p>
+                                            <img id="day2Icon"/>
+                                            <p id="day2Temp">Temp:</p>
+                                            <p id="day2Humid">Humidity:</p>
+                                            <p id="day2Wind">Wind Speed:</p>
+                                        </figure>
+                                    </section>
+                                </section>
+                                <section class="col pr-3">
+                                    <section id="day3" class="card">
+                                        <figure class="bg-primary text-light card-body">
+                                            <p id="day3Date"></p>
+                                            <img id="day3Icon"/>
+                                            <p id="day3Temp">Temp:</p>
+                                            <p id="day3Humid">Humidity</p>
+                                            <p id="day3Wind">Wind Speed</p>
+                                        </figure>
+                                    </section>
+                                </section>
+                                <section class="col pr-3">
+                                    <section id="day4" class="card">
+                                        <figure class="bg-primary text-light card-body">
+                                            <p id="day4Date"></p>
+                                            <img id="day4Icon"/>
+                                            <p id="day4Temp">Temp:</p>
+                                            <p id="day4Humid">Humidity:</p>
+                                            <p id="day4Wind">Wind Speed:</p>
+                                        </figure>
+                                    </section>
+                                </section>
+                                <section class="col">
+                                    <section id="day5" class="card">
+                                        <figure class="bg-primary text-light card-body">
+                                            <p id="day5Date"></p>
+                                            <img id="day5Icon"/>
+                                            <p id="day5Temp">Temp:</p>
+                                            <p id="day5Humid">Humidity:</p>
+                                            <p id="day5Wind">Wind Speed:</p>
+                                        </figure>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="wthr.js"></script>
+</html>
